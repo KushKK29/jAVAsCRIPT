@@ -1,0 +1,56 @@
+body{
+    font-family: Arial;
+    text-align: center;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    gap: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: width 2s, height 2s, transform 2s;
+}
+button:hover{
+    width: 100px;
+    height: 40px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: 10px;
+    
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+button.delete{
+    background-color: red;
+    color: white;
+    border: 0.1rem solid black;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
